@@ -16,6 +16,4 @@ As a group build out a sitemap illustrating all the pages you will be building, 
 * any linking between the pages that will be occurring
 * the hierarchy of pages
 * the titling of pages
- 
-
 
