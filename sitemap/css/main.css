@@ -1,15 +1,19 @@
 
 
 img{
-	width: 80%;
+	width: 86%;
 }
 
 body{
 	margin: 2em;
 	padding-bottom: 1em; 
-	font-family: 'Yeseva One', cursive;
+	
+
 }
 
 h1{
 	padding-left: 40px; 
+	  font-family: 'Yeseva One', cursive;
+  font-size: 2em;
+  color: #B18C64;
 }
