@@ -1,5 +1,5 @@
 # Project 2
-Second project for <b>IAT-339</b>
+Second project for IAT-339
 
 ---
 
