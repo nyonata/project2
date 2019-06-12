@@ -26,6 +26,8 @@ section code {
   padding: 0.5em 0.75em;
 }
 
+
+
 /* 
   INTERACTIVE ELEMENTS -------------------
 */
@@ -100,8 +102,8 @@ section code {
   TEXT ELEMENTS -------------------
 */
 .h1{
-  font-family: 'Yeseva One', cursive;
-  font-size: 2em;
+  font-family: 'GT-Super-Display-Super';
+  font-size: 6rem;
   color: #B18C64;
 }
 
