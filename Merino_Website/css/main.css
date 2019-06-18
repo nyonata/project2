@@ -1,5 +1,7 @@
 body{
-	font-family: "GT-Walsheim-Pro-Medium"; 
+	font-family: "GT-Walsheim-Pro-Medium";
+	background-color: black;  
+	color:white;
 }
 
 
@@ -18,23 +20,23 @@ body{
 
 
 .header{
-	background-color: white; 
+	background-color: black; 
 	width: 100%; 
 	height: 16vh; 
 	position: sticky;
-	z-index: 2;
+	z-index: 10;
 	top: 0; 
-	border-bottom: solid 2px black;
+	border-bottom: solid 2px white;
 
 }
 
 .body{
-	background-color: white; 
+	background-color: black; 
 	width: 100%;
 	height: 84vh;
 	display: flex;
 	flex-flow: column wrap; 
-	border-bottom: solid 2px black;
+
 
 }
 
@@ -43,25 +45,41 @@ body{
 
 }
 
-.new{
-	background-color: white; 
-	width: 30%;
-	border-right: solid 2px black;
+h1{
+	padding-top: 1rem; 
+	padding-left: 1rem; 
+}
+
+img{
+	width: 100%;
+	opacity: 0.5; 
+}
+
+.title{
 	font-family: "GT-Super-Display-Super"; 
 	font-size: 3rem; 
+	width: 30%;
+	position: absolute;
+	top: 36vh; 
+	z-index: 2; 
+	padding-left: 1rem; 
+}
+
+.new{
+	background-color: black; 
+	width: 30%;
+	border-right: solid 2px white;
 
 }
 
 .event{
-	background-color: white; 
+	background-color: black; 
 	width: 30%;
-	border-right: solid 2px black;
-	font-family: "GT-Super-Display-Super"; 
-	font-size: 3rem; 
+	border-right: solid 2px white;
 }
 
 .collection{
-	background-color: white; 
+	background-color: black; 
 	width: 40%;
 	
 	overflow: auto;
@@ -81,6 +99,10 @@ body{
 }
 
 .footer{
-	height: 8rem; 
+	background-color: black; 
+	height: 10rem; 
+	border-top: solid 2px white;
+	position: sticky;
+	z-index: 3;
 }
 
