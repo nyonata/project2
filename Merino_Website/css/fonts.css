@@ -11,3 +11,15 @@
 	url('../fonts/GT-Walsheim-Pro-Medium.otf') format('truetype');
 }
 
+
+@font-face{
+	font-family: 'GT-Super-Display-Super';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/GT-Super-Display-Super.eot');
+	src: url('../fonts/GT-Super-Display-Super.oot?#iefix') format('embedded-opentype'),
+	url('../fonts/GT-Super-Display-Super.woff2') format('woff2'),
+	url('../fonts/GT-Super-Display-Super.woff') format('woff'),
+	url('../fonts/GT-Super-Display-Super.otf') format('truetype');
+}
+

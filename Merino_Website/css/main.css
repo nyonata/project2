@@ -1,204 +1,86 @@
-h1{
-	position: absolute;
-	z-index: 10; 
-	font-size: 3rem;
-	left: 3%; 
+body{
 	font-family: "GT-Walsheim-Pro-Medium"; 
 }
 
-nav {
-  float: right;
+
+
+.wrapper{
+	display: flex;
+	flex-flow: row wrap; 
+	height: 100vh; 
 
 }
 
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+.wrapper > *{
+	flex: 1 100%; 
 
-nav li {
-  display: inline-block;
-  margin-left: 20px; 
-  position: relative;
-  top: 80px; 
 }
 
 
-nav a {
-  color: black;
-  text-decoration: none;
-  /*text-transform: uppercase;*/
-  font-size: 20px;
-}
-
-#image{
-	position: absolute;
-	z-index: 9; 
-	width: 29%; 
-	top: 330px;
-	opacity: 0.5; 
-}
-
-#arrival{
-	position: absolute;
-	z-index: 10; 
-	top: 440px; 
-	font-size: 2rem;
-	left: 3%; 
-}
-
-
-#event{
-	position: absolute;
-	z-index: 10; 
-	top: 440px; 
-	font-size: 2rem;
-	left: 32%; 
-}
-
-
-#v-line01{
-	width: 2px; 
-	height: 1000px; 
-	background-color: black; 
-	position: absolute;
-	left: 29%; 
-	top:110px;
-}
-
-
-
-#v-line02{
-	width: 2px; 
-	height: 880px; 
-	background-color: black; 
-	position: absolute;
-	left: 58%; 
-}
-
-
-#h-line01{
+.header{
+	background-color: white; 
 	width: 100%; 
-	height: 2px; 
-	background-color: black; 
-	position: absolute;
-	top:110px;
+	height: 16vh; 
+	position: sticky;
+	z-index: 2;
+	top: 0; 
+	border-bottom: solid 2px black;
 
-} 
-
-
-#collection01{
-	position: absolute;
-	z-index: 10; 
-	top: 110px; 
-	font-size: 2rem;
-	left: 72%; 
 }
 
-
-#h-line02{
-	height: 2px; 
-	width: 42%;
-    background-color: black; 
-	position: absolute;
-	top:220px;
-    left: 58%; 
-}
-
-#collection02{
-	position: absolute;
-	z-index: 10; 
-	top: 220px; 
-	font-size: 2rem;
-	left: 72%; 
-}
-
-#h-line03{
-	height: 2px; 
-	width: 42%;
-    background-color: black; 
-	position: absolute;
-	top:330px;
-    left: 58%; 
-}
-
-#collection03{
-	position: absolute;
-	z-index: 10; 
-	top: 330px; 
-	font-size: 2rem;
-	left: 72%; 
-}
-
-#h-line04{
-	height: 2px; 
-	width: 42%;
-    background-color: black; 
-	position: absolute;
-	top:440px;
-    left: 58%; 
-}
-
-#collection04{
-	position: absolute;
-	z-index: 10; 
-	top: 440px; 
-	font-size: 2rem;
-	left: 72%; 
-}
-
-#h-line05{
-	height: 2px; 
-	width: 42%;
-    background-color: black; 
-	position: absolute;
-	top:550px;
-    left: 58%; 
-}
-
-#collection05{
-	position: absolute;
-	z-index: 10; 
-	top: 440px; 
-	font-size: 2rem;
-	left: 72%; 
-}
-
-#h-line06{
-	height: 2px; 
-	width: 42%;
-    background-color: black; 
-	position: absolute;
-	top:660px;
-    left: 58%; 
-}
-
-
-#h-line07{
-	height: 2px; 
-	width: 42%;
-    background-color: black; 
-	position: absolute;
-	top:770px;
-    left: 58%; 
-}
-
-
-#h-line08{
-	height: 2px; 
+.body{
+	background-color: white; 
 	width: 100%;
-    background-color: black; 
-	position: absolute;
-	top:880px; 
+	height: 84vh;
+	display: flex;
+	flex-flow: column wrap; 
+	border-bottom: solid 2px black;
+
+}
+
+.body > *{
+	flex: 1 100%; 
+
+}
+
+.new{
+	background-color: white; 
+	width: 30%;
+	border-right: solid 2px black;
+	font-family: "GT-Super-Display-Super"; 
+	font-size: 3rem; 
+
+}
+
+.event{
+	background-color: white; 
+	width: 30%;
+	border-right: solid 2px black;
+	font-family: "GT-Super-Display-Super"; 
+	font-size: 3rem; 
+}
+
+.collection{
+	background-color: white; 
+	width: 40%;
+	
+	overflow: auto;
+}
+
+.drawer{
+	height: 6rem; 
+	border-bottom: solid 1px grey;
 }
 
 
-
-h4{
-	position: absolute;
-	z-index: 10; 
-	top: 880px; 
-	font-size: 2rem;
-	left: 72%; 
+.text{
+	font-size: 1.5rem; 
+	text-align: center;
+	padding-top: 5% ; 
+	
 }
+
+.footer{
+	height: 8rem; 
+}
+
