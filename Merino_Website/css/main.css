@@ -1,5 +1,5 @@
 body{
-	font-family: "GT-Walsheim-Pro-Medium";
+	font-family: 'Roboto', sans-serif;
 	background-color: black;  
 	color:black;
 }
@@ -42,6 +42,7 @@ body{
 	padding-left: 5%;
 /*	background-color: burlywood;*/
 	transition: .5s;
+	border-bottom: solid 2px black;
 }
 
 .header-title {
@@ -123,16 +124,12 @@ img{
 
 .new{
 	background-color: white; 
-	width: 30%;
+	width: 60%;
 	border-right: solid 2px black;
 
 }
 
-.event{
-	background-color: white; 
-	width: 30%;
-	border-right: solid 2px black;
-}
+
 
 .collection{
 	background-color: white; 
