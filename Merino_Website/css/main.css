@@ -1,7 +1,7 @@
 body{
 	font-family: "GT-Walsheim-Pro-Medium";
 	background-color: black;  
-	color:white;
+	color:black;
 }
 
 
@@ -19,25 +19,81 @@ body{
 }
 
 
-.header{
-	background-color: black; 
+/*.header{
+	background-color: white; 
 	width: 100%; 
 	height: 16vh; 
 	position: sticky;
 	z-index: 10;
 	top: 0; 
-	border-bottom: solid 2px white;
+	border-bottom: solid 2px black;
+
+}*/
+
+.header-container {
+	position: relative;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: row;
+	width: 95%;
+	height: 10vh;
+	margin: 0;
+	padding-left: 5%;
+/*	background-color: burlywood;*/
+	transition: .5s;
+}
+
+.header-title {
+	font-family: 'GT Walsheim', Arial, sans-serif;
+	width: 60%;
+	/*	background-color: aqua;*/
+}
+
+
+
+.nav-item {
+	list-style-type: none;
+	flex-grow: 1;
+	margin: 0 10%;
+	/*	background-color: azure;*/
 
 }
 
+
+
+.header-nav-ul {
+	font-family: 'GT Walsheim', Arial, sans-serif;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	height: 100%;
+	margin: 0%;
+	float: right;
+	align-items: center;
+
+}
+
+.header-nav-container {
+	width: 40%;
+	padding-right: 2%;
+	/*	background-color: aqua;*/
+}
+
+.nav-a {
+	text-decoration: none;
+	color: black;
+}
+
+
+
 .body{
-	background-color: black; 
+	background-color: white; 
 	width: 100%;
-	height: 84vh;
+	height: 90vh;
+	
 	display: flex;
 	flex-flow: column wrap; 
-
-
 }
 
 .body > *{
@@ -66,20 +122,20 @@ img{
 }
 
 .new{
-	background-color: black; 
+	background-color: white; 
 	width: 30%;
-	border-right: solid 2px white;
+	border-right: solid 2px black;
 
 }
 
 .event{
-	background-color: black; 
+	background-color: white; 
 	width: 30%;
-	border-right: solid 2px white;
+	border-right: solid 2px black;
 }
 
 .collection{
-	background-color: black; 
+	background-color: white; 
 	width: 40%;
 	
 	overflow: auto;
@@ -99,10 +155,15 @@ img{
 }
 
 .footer{
-	background-color: black; 
+	background-color: white; 
 	height: 10rem; 
-	border-top: solid 2px white;
+	border-top: solid 2px black;
 	position: sticky;
 	z-index: 3;
 }
 
+
+.home-body {
+	position:relative;
+	background-color:white;
+}
