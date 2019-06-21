@@ -1,0 +1,166 @@
+body{
+	font-family: 'Roboto', sans-serif;
+	background-color: black;  
+	color:black;
+}
+
+
+
+.wrapper{
+	display: flex;
+	flex-flow: row wrap; 
+	height: 100vh; 
+
+}
+
+.wrapper > *{
+	flex: 1 100%; 
+
+}
+
+
+/*.header{
+	background-color: white; 
+	width: 100%; 
+	height: 16vh; 
+	position: sticky;
+	z-index: 10;
+	top: 0; 
+	border-bottom: solid 2px black;
+
+}*/
+
+.header-container {
+	position: relative;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: row;
+	width: 95%;
+	height: 10vh;
+	margin: 0;
+	padding-left: 5%;
+/*	background-color: burlywood;*/
+	transition: .5s;
+	border-bottom: solid 2px black;
+}
+
+.header-title {
+	font-family: 'GT Walsheim', Arial, sans-serif;
+	width: 60%;
+	/*	background-color: aqua;*/
+}
+
+
+
+.nav-item {
+	list-style-type: none;
+	flex-grow: 1;
+	margin: 0 10%;
+	/*	background-color: azure;*/
+
+}
+
+
+
+.header-nav-ul {
+	font-family: 'GT Walsheim', Arial, sans-serif;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	height: 100%;
+	margin: 0%;
+	float: right;
+	align-items: center;
+
+}
+
+.header-nav-container {
+	width: 40%;
+	padding-right: 2%;
+	/*	background-color: aqua;*/
+}
+
+.nav-a {
+	text-decoration: none;
+	color: black;
+}
+
+
+
+.body{
+	background-color: white; 
+	width: 100%;
+	height: 90vh;
+	
+	display: flex;
+	flex-flow: column wrap; 
+}
+
+.body > *{
+	flex: 1 100%; 
+
+}
+
+h1{
+	padding-top: .5rem; 
+	padding-left: 1rem; 
+}
+
+img{
+	width: 40%;
+	opacity: 0.5; 
+}
+
+.title{
+	font-family: "GT-Super-Display-Super"; 
+	font-size: 3rem; 
+	width: 30%;
+	position: absolute;
+	top: 36vh; 
+	z-index: 2; 
+	padding-left: 1rem; 
+}
+
+.new{
+	background-color: white; 
+	width: 60%;
+	border-right: solid 2px black;
+
+}
+
+
+
+.collection{
+	background-color: white; 
+	width: 40%;
+	
+	overflow: auto;
+}
+
+.drawer{
+	height: 3rem; 
+	border-bottom: solid 1px grey;
+}
+
+
+.text{
+	font-size: 1.5rem; 
+	text-align: center;
+	padding-top: 1% ; 
+	
+}
+
+.footer{
+	background-color: white; 
+	height: 10rem; 
+	border-top: solid 2px black;
+	position: sticky;
+	z-index: 3;
+}
+
+
+.home-body {
+	position:relative;
+	background-color:white;
+}
