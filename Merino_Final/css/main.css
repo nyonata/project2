@@ -3,7 +3,8 @@
   Default styling for the style guide 
 */
 body {
-  font-family: sans-serif;
+  font-family:'Roboto', sans-serif;
+  font-weight: lighter; 
   padding: 2rem;
 }
 
@@ -42,19 +43,14 @@ a:hover {
 
 /* Styling for in-text link */
 .in-text-link{
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-decoration: none;
     color: black;
 }
 
 .in-text-link:hover, .in-text-link:focus {
   color: black;
-  text-decoration: underline;
-}
-
-.in-text-link:focus {
-  color: black;
-  text-decoration: underline;
+  text-decoration: line-through;
 }
 
 /* Styling for the navigation button */
@@ -85,12 +81,7 @@ a:hover {
 
 .button-nav:hover, .button-nav:focus {
   color: black;
-  text-decoration: underline;
-}
-
-.button-nav:focus {
-  color: black;
-  text-decoration: underline;
+  text-decoration: line-through;
 }
 
 /* Styling for submit/reset button */
@@ -136,19 +127,19 @@ a:hover {
 }
 
 .h2{
-  font-family: 'Roboto-regular', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .h3{
-  font-family: 'Roboto-light', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .p{
-  font-family: 'Roboto-light', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 li{
-  font-family: 'Roboto-light', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* 
@@ -156,7 +147,7 @@ li{
 */
 
 .main-nav{
-  font-family: 'Roboto-regular', sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-decoration: none;
   font-size: 2em;
   color: black;
@@ -169,7 +160,8 @@ li{
 
 
 .sub-nav{
-  font-family: 'Roboto-regular', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
   text-decoration: none;
   color: black;
   display: inline-block;
@@ -191,26 +183,27 @@ li{
     display: block;
     width: 500px;
     height: 500px;
-    background-color: #F0E5DE;
+    background-color: #F7F6FB;
 }
 
 
 .product-element a{
-  font-family: 'Yeseva One', cursive;
+  font-family: 'Roboto', sans-serif;
   text-decoration: none;
   font-size: 4em;
-  color: #B18C64;
+  color: black;
 }
 
 .product-element a:hover{
-  font-family: 'Yeseva One', cursive;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
   text-decoration: underline;
   font-size: 4em;
-  color: #B18C64;
+  color: black;
 }
 
 .product-price {
-  font-family: 'Space Mono', monospace;
+  font-family: 'Roboto', sans-serif;
   text-decoration: none;
   max-width: 200px;
 }
