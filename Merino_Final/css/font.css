@@ -11,3 +11,13 @@
 	url('../font/GT-Super-Display-Super.otf') format('truetype');
 }
 
+@font-face{
+	font-family: 'Roboto';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../font/Roboto.ttf');
+	src: url('../font/Roboto.oot?#iefix') format('embedded-opentype'),
+	url('../font/Roboto.woff2') format('woff2'),
+	url('../font/Roboto.woff') format('woff'),
+	url('../font/Roboto.otf') format('truetype');
+}
