@@ -26,7 +26,15 @@ section code {
   padding: 0.5em 0.75em;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
 
+a:hover {
+  text-decoration: underline;
+  color: black;
+}
 
 /* 
   INTERACTIVE ELEMENTS -------------------
@@ -34,13 +42,13 @@ section code {
 
 /* Styling for in-text link */
 .in-text-link{
-    font-family: 'Space Mono', monospace;
+    font-family: Roboto, sans-serif;
     text-decoration: none;
-    color: #B18C64;
+    color: black;
 }
 
 .in-text-link:hover, .in-text-link:focus {
-  color: #F0E5DE;
+  color: black;
   text-decoration: underline;
 }
 
@@ -51,10 +59,20 @@ section code {
 
 /* Styling for the navigation button */
 .button-nav {
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #C4C4C4;
+    text-decoration: none;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+
+  /*
   font-family: 'Yeseva One', cursive;
   text-decoration: none;
   color: #B18C64;
-  /*
+
   display: inline-block;
   padding: 0.5em 0.75em;
   color: black;
@@ -64,8 +82,9 @@ section code {
   */
 }
 
+
 .button-nav:hover, .button-nav:focus {
-  color: #F0E5DE;
+  color: black;
   text-decoration: underline;
 }
 
@@ -77,23 +96,33 @@ section code {
 /* Styling for submit/reset button */
 
 .btn{
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  padding: 20px 80px;
+  margin: 20px auto;
+  margin-right: 40px;
+  background-color: white;
+  border: 1px solid black;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+
+    /*
   font-family: 'Space Mono', monospace;
-    text-decoration: none;
-    background-color: #B18C64;
-    display: inline-block;
-    padding: 0.5em 0.75em;
-    color: white;
+  text-decoration: none;
+  background-color: #B18C64;
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  color: white;
+    */
 }
 
 .btn:hover, .btn:focus {
-  background-color: #F0E5DE;
-  text-decoration: underline;
+  background-color: #C4C4C4;
+  text-decoration: none;
 }
 
-.btn:focus {
-  background-color: black;
-  text-decoration: underline;
-}
 
 
 
@@ -104,23 +133,22 @@ section code {
 .h1{
   font-family: 'GT-Super-Display-Super';
   font-size: 6rem;
-  color: #B18C64;
 }
 
 .h2{
-  font-family: 'Yeseva One', cursive;
+  font-family: 'Roboto-regular', sans-serif;
 }
 
 .h3{
-  font-family: 'Yeseva One', cursive;
+  font-family: 'Roboto-light', sans-serif;
 }
 
 .p{
-  font-family: 'Space Mono', monospace;
+  font-family: 'Roboto-light', sans-serif;
 }
 
 li{
-  font-family: 'Space Mono', monospace;
+  font-family: 'Roboto-light', sans-serif;
 }
 
 /* 
@@ -128,33 +156,29 @@ li{
 */
 
 .main-nav{
-  font-family: 'Yeseva One', cursive;
+  font-family: 'Roboto-regular', sans-serif;
   text-decoration: none;
   font-size: 2em;
-  color: #B18C64;
+  color: black;
 }
 
 .main-nav:hover, .main-nav:focus {
-  color: #F0E5DE;
-  text-decoration: underline;
-}
-
-.main-nav:focus {
   color: black;
   text-decoration: underline;
 }
 
+
 .sub-nav{
-  font-family: 'Yeseva One', cursive;
+  font-family: 'Roboto-regular', sans-serif;
   text-decoration: none;
-  color: #B18C64;
+  color: black;
   display: inline-block;
   padding: 0.5em 0.75em;
 
 }
 
 .sub-nav:hover, .main-nav:focus {
-  color: #F0E5DE;
+  color: black;
   text-decoration: underline;
 }
 
@@ -200,28 +224,28 @@ li{
     display: block;
     width: 20%;
     margin-right: 0.5rem;
-    background: #F0E5DE;
+    background: #F7F6FB;
     height: 200px;
 }
 
 .grid-col-4of5 {
     width: 80%;
     margin-left: 0.5rem;
-    background: #F0E5DE;
+    background: #F7F6FB;
     height: 200px;
 }
 
 .grid-col-3of5 {
     width: 60%;
     margin-right: 0.5rem;
-    background: #F0E5DE;
+    background: #F7F6FB;
     height: 200px;
 }
 
 .grid-col-2of5 {
     width: 40%;
     margin-left: 0.5rem;
-    background: #F0E5DE;
+    background: #F7F6FB;
     height: 200px;
 }
 
@@ -243,13 +267,13 @@ div{
 #color-box {
     width: 200px;
     height: 200px;
-    background: #F0E5DE;
+    background: #C4C4C4;
 }
 
 #color-box2 {
     width: 200px;
     height: 200px;
-    background: #B18C64;
+    background: #F7F6FB;
 }
 
 #black-box{
