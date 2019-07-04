@@ -1,0 +1,498 @@
+/*
+
+    Made by:
+    	
+ 	 \(▔＾▔)/        \(^——^)/
+
+ 	Amiko Tong  &  Nadia Yonata
+ 		
+
+
+
+ 	For IAT 339 course group project. 
+ 	Used ... resource or code from ...*/
+
+
+
+ 	/*----------page overall setting start-----------*/
+ 	.wrapper{
+ 		position: relative;
+ 		height: 100vh;
+ 		margin: 0;
+ 		padding: 0;
+
+ 		display: flex;
+ 		flex-flow: row wrap; 
+ 		font-family:  Helvetica, sans-serif;
+ 		letter-spacing: 0.05em;
+ 		font-weight: 300; 
+ 		background-color: white;  
+ 		color:black; 
+ 	}
+
+
+ 	.wrapper > *{
+ 		flex: 1 100%; 
+ 	}
+
+
+ 	::selection {	
+ 	/*	background-color: #5AEC80; 
+ 	background-color: #C989FD; */
+ 	background-color: #FFD600; 
+ 	/*background-color: #C4C4C4;*/ 
+ }
+
+ /*----------page overall setting end-----------*/
+
+
+
+
+ /*----------header start-----------*/
+
+ .header{
+ 	position: sticky;
+ 	position: -webkit-sticky; /* For Safari */
+ 	top: 0;
+ 	left: 0;
+ 	display: flex;
+ 	flex-flow: column wrap; 
+ 	width: 96%;
+
+ 	height: 15vh; 
+ 	margin: 0;
+ 	padding: 0px 2%;
+ 	z-index: 20; 
+ 	background-color: white; 
+ 	border-bottom: solid 1px black;
+ }
+
+ .header > *{
+ 	flex: 1 100%; 
+ }
+
+ .header-title{
+ 	width: 30%; 
+ 	float: left;
+ 	font-weight: 500; 
+ 	color: black; 
+ 	text-decoration: none;
+ 	font-size: 40px; 
+ 	-webkit-transition: color 0.2s; /*For Safari*/
+ 	transition: color 0.2s;
+ }
+
+ .header-title:active, .header-title:hover, .header-title:focus {
+ 	color:#C4C4C4; 
+ }
+
+
+ .header-nav-container {
+ 	width: 70%; 
+ }
+
+ .header-nav-ul{
+ 	list-style-type: none;
+ 	padding-top: 43px;
+ }
+
+ .nav-item {
+ 	float: right;
+ 	padding-left: 7%; 
+ }
+
+ .nav-a{
+ 	font-weight: 500; 
+ 	font-size: 20px; 
+ 	text-transform: uppercase;
+ 	text-decoration: none;
+ 	color: #C4C4C4;
+ 	-webkit-transition: color 0.2s; /*For Safari 3.1 to 6.0*/
+ 	transition: color 0.2s;
+ }
+
+ .nav-a:active, .nav-a:hover, .nav-a:focus {
+ 	color:black; 
+ 	text-decoration: underline;
+ }
+
+ /*----------header end-----------*/
+
+
+
+
+
+ /*----------body start-----------*/
+
+ .body{
+ 	position: relative;
+ 	z-index: 10; 
+ 	width: 100%;
+ 	height: 108vh;
+ 	top: 0; 
+ 	left: 0; 
+ 	margin:0;
+ 	display: flex;
+ 	flex-flow: row wrap;
+ 	background-color: white; 
+ 	padding: 8vh 20%;
+ }
+
+ .body > *{
+ 	flex: 1 100%; 
+
+ }
+
+ .row-1{
+ 	display: flex;
+ 	height: 10vh; 
+ 	
+ }
+
+ .row-2{
+ 	display: flex;
+ 	flex-flow: column wrap; 
+ 	height: 40vh; 
+ 
+ }
+
+ .row-2 > *{
+ 	flex:1 100%;
+ }
+
+ .col-1{
+ 	position: relative;
+ 	margin: 2vh 0; 
+ 	width: 50%; 
+
+ }
+
+ .col-2{
+ 	width: 50%;
+ 	position: relative;
+ 	margin: 2vh 0; 
+ 	width: 50%; 
+
+ }
+
+ .input{
+ 	margin-top: .5vh;  
+ 	margin-bottom: 1vh;
+
+ 	padding: 1vh 3%; 
+ 	font-size: 16px; 
+ 	font-family:  Helvetica, sans-serif;
+ 	font-weight: 300; 
+
+ }
+
+ .input-text{
+ 	margin: 0 0; 
+ }
+
+
+ .row-3{
+ 	display: flex;
+ 	height: 10vh; 
+ 	
+ }
+
+
+ .row-4{
+ 	display: flex;
+ 	flex-flow: column wrap; 
+ 	/*padding-top: 2vh;*/ 
+ 	font-size: 20px;
+ 	height: 10vh; 
+ 	/*background-color: red; */
+
+ }
+ .row-4 > *{
+ 	flex: 1 100%; 
+ }
+
+
+ .row-4-text{
+ 	width: 30%; 
+ 	font-weight: 500; 
+ 	
+
+ 	padding-top: 2.5vh; 
+
+
+ }
+ .row-4-list{
+ 	position: relative;
+ 	width: 70%;  
+ }
+
+ .row-4-list-ul{
+ 	list-style-type: none;
+ }
+
+ .row-4-list-li{
+ 	float: right;
+ 	padding-left: 4%; 
+
+ 	font-weight: 300; 
+ 	text-decoration:none;
+ 	-webkit-transition: font-weight 0.2s; /*For Safari 3.1 to 6.0*/
+ 	transition: font-weight 0.2s; 
+
+ }
+
+
+ .row-4-list-li:active, .row-4-list-li:hover, .row-4-list-li:focus {
+
+ 	font-weight: 500;
+ 	text-decoration:underline;  
+ }
+
+
+ .row-5{
+ 	display: flex;
+ 	flex-flow: column wrap; 
+ 	height: 22vh; 
+ 	
+ }
+
+ .row-5 > *{
+ 	flex:1 100%;
+ }
+
+
+
+
+ .row-6{
+ 	display: flex;
+ 	height: 10vh; 
+ 	
+
+ 	
+ }
+ .button{
+ 	position: relative;
+ 	margin:auto 0;
+ 	width: 170px; 
+ 	font-size: 20px; 
+ 	padding: 2vh 5px; 
+ 	text-align: center;
+ 	border: 1px solid black; 
+ 	background-color: white; 
+
+ 	-webkit-transition: background-color 0.2s; /*For Safari 3.1 to 6.0*/
+ 	transition: background-color 0.2s;
+ }
+
+ .button:active, .button:hover, .button:focus {
+ 	background-color: #C4C4C4; 
+ }
+
+
+ .body-text{
+ 	position: relative;
+ 	margin: auto 0; 
+ 	font-size: 30px; 
+ }
+
+ /*----------body end-----------*/
+
+
+
+
+
+ /*----------footer start-----------*/
+
+ .footer {
+ 	position: relative;
+ 	z-index: 20; 
+ 	background-color: white; 
+ 	height: 2vh; 
+ 	width: 100%; 
+ 	border-top: 1px solid black;
+ 	display : flex;
+ 	flex-flow : column wrap;
+ 	padding: 2vh 0; 
+ }
+
+ .footer > * {
+ 	flex : 1 100%;
+ }
+
+ .footer-a{
+ 	color: #C4C4C4;
+ 	font-weight: 300; 
+ 	text-decoration:none;
+ 	-webkit-transition: font-weight 0.2s, color 0.2s; /*For Safari 3.1 to 6.0*/
+ 	transition: font-weight 0.2s, color 0.2s; 
+ }
+
+ .footer-a:active, .footer-a:hover, .footer-a:focus {
+ 	color: black; 
+ 	font-weight: 500;  
+ }
+
+ .style-guide {
+ 	padding-right: 8%; 
+ 	width : 30%;
+ 	text-align: right;
+
+ }
+
+ .citation {
+ 	padding: 0px 2%; 
+ 	width : 20%;
+ 	text-align : center;
+ 	border-left : 1px solid #C4C4C4;
+ 	border-right : 1px solid #C4C4C4;
+ }
+
+
+ .git-repo {
+ 	width : 30%;
+ 	padding-left: 8%; 
+ 	text-align: left;
+ }
+
+ /*----------footer end-----------*/
+
+
+ @media only screen and (max-width: 720px), only screen and (max-height: 540px){
+ 	/*----------mobile header start-----------*/
+
+ 	.header{
+ 		height: 80px; 
+ 		position: fixed;
+ 		position: -webkit-fixed; /* For Safari */
+ 		flex-flow: row wrap; 
+ 	}
+
+
+ 	.header-title{
+ 		position: fixed;
+ 		top: 10px; 
+ 		left: 40px; 
+ 		height:30px;
+ 		width: 100%; 
+ 		float: left;
+ 		font-size: 30px; 
+ 	}
+
+ 	.header-nav-container {
+ 		position: fixed;
+ 		width: 100%; 
+ 		top: 40px; 
+ 		left: 0px; 
+ 		height:40px;
+ 		padding: 0; 
+ 		margin:0;	
+ 	}
+
+ 	.header-nav-ul{
+ 		padding-top: 0px;
+ 	}
+
+ 	.nav-item {
+ 		float: left;
+ 		padding: 0; 
+ 		margin:0;
+ 		padding-right: 6%; 
+
+ 	}
+
+ 	.nav-a{
+ 		font-weight: 500; 
+ 		font-size: 14px; 
+ 	}
+
+
+ 	/*----------mobile header end-----------*/
+
+ 	.body{
+ 		position: relative;
+ 		top: 80px;
+ 		height: 900px; 
+
+ 	}
+
+ 	.body-text{
+ 		font-size: 20px; 
+ 	}
+
+ 	.input-text{
+ 		font-size: 14px; 
+ 	}
+
+ 	.input{
+ 		margin-top: .5vh;  
+ 		margin-bottom: 1vh;
+
+ 		padding: .2vh 1%; 
+ 		font-size: 14px; 
+
+
+ 	}
+
+ 	.row-4{
+ 		height: 80px; 
+ 		font-size: 16px; 
+ 		
+ 	}
+
+ 	.row-6{
+ 		height: 60px; 
+ 	}
+
+
+
+
+ 	.row-2{
+ 		display: flex;
+ 		flex-flow: row wrap; 
+ 		height: 460px; 
+ 		
+ 	}
+ 	 	.row-5{
+ 		display: flex;
+ 		flex-flow: row wrap; 
+ 		height: 250px; 
+ 
+ 	}
+
+
+ 	.col-1{
+
+ 		margin: 14px 0; 
+ 		width: 100%; 
+
+ 	}
+
+ 	.col-2{
+ 		width: 100%;
+
+ 		margin: 14px 0; 
+
+
+ 	}
+
+
+ 	 .button{
+    font-size: 16px; 
+ 	width: 100px; 
+
+ 	padding: 10px 3px; 
+
+
+ }
+
+  		.footer{
+ 			position: relative;
+ 			top: 26vh; 
+ 			font-size: 12px; 
+
+ 		}
+
+
+
+
+ }
