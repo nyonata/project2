@@ -186,10 +186,8 @@
  	}
 
  	.display-top:active, .display-top:hover, .display-top:focus {
- 		background-color:#C4C4C4;
  		font-weight: 500; 
  	}
-
 
  	.display-top a{
  		color: black; 
