@@ -1,0 +1,171 @@
+.header-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: row;
+	width: 95%;
+	height: 10vh;
+	margin: 0;
+	padding-left: 5%;
+/*	background-color: burlywood;*/
+	transition: .5s;
+}
+
+.header-title {
+	font-family: 'GT Walsheim', Arial, sans-serif;
+	width: 60%;
+	/*	background-color: aqua;*/
+}
+
+
+
+.nav-item {
+	list-style-type: none;
+	flex-grow: 1;
+	margin: 0 10%;
+	/*	background-color: azure;*/
+
+}
+
+.nav-a {
+	text-decoration: none;
+	color: black;
+}
+
+.header-nav-ul {
+	font-family: 'GT Walsheim', Arial, sans-serif;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	height: 100%;
+	margin: 0%;
+	float: right;
+	align-items: center;
+
+}
+
+.header-nav-container {
+	width: 40%;
+	padding-right: 2%;
+	/*	background-color: aqua;*/
+}
+
+.about-container {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	top: 30%;
+	height: 50%;
+}
+
+.about-text-container {
+
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+
+	/*	background-color: aquamarine;*/
+
+}
+
+.about-text-title {
+	font-family: 'GT Super', Arial, sans-serif;
+	font-size: 8rem;
+	margin: 0;
+}
+
+.about-text-content {
+	font-family: 'GT Walsheim', Arial, sans-serif;
+	font-size: .9rem;
+	max-width: 90vh;
+
+}
+
+.about-body {
+	position: relative;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+.about-footer {
+	position: fixed;
+	top: 90%;
+	left: 50%;
+	height: 10vh;
+	width: 1px;
+	margin: auto;
+	background-color: black;
+}
+
+
+
+.about-side {
+	font-family: 'GT Walsheim', Arial, sans-serif;
+	font-style: normal;
+	font-size: .8rem;
+
+	margin: auto 0;
+	transform-origin: center;
+	transform: rotate(-90deg);
+
+	/*	background-color: aquamarine;*/
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.about-scroll {
+	overflow-y: scroll;
+	top: 10vh;
+	height: 80vh;
+	transition: .5s;
+	/*	background-color:darkcyan;*/
+	position: relative;
+}
+
+.about-footer-bg {
+	position: fixed;
+	top: 90%;
+	width: 100%;
+	height: 10vh;
+	background-color: white;
+}
+
+
+
+
+.section {
+	transition: .7s ease-in-out;
+}
+
+.fullpage .section {
+	opacity: 0;
+	transition: all 1.5s ease-in-out;
+	
+}
+.fullpage .section.active {
+  visibility: visible;
+  opacity: 1;
+}
+.fullpage .section .about-container{
+	opacity: 0;
+	transition: all 1.5s ease-in-out;
+	
+}
+.fullpage .section .about-container{
+	opacity: 1;
+	
+	
+}

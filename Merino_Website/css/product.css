@@ -1,0 +1,809 @@
+/*
+
+    Made by:
+    	
+ 	 \(▔＾▔)/        \(^——^)/
+
+ 	Amiko Tong  &  Nadia Yonata
+ 		
+
+
+
+ 	For IAT 339 course group project. 
+ 	Used ... resource or code from ...*/
+
+
+
+ 	/*----------page overall setting start-----------*/
+ 	.wrapper{
+ 		position: relative;
+ 		height: 100vh;
+ 		margin: 0;
+ 		padding: 0;
+
+ 		display: flex;
+ 		flex-flow: row wrap; 
+ 		font-family:  Helvetica, sans-serif;
+ 		letter-spacing: 0.05em;
+ 		font-weight: 300; 
+ 		background-color: white;  
+ 		color:black; 
+
+ 		overflow-y: hidden;
+ 		overflow-x:hidden;
+ 		-webkit-backface-visibility: hidden; /* For Safari */
+ 		-webkit-overflow-scrolling:touch; /* For Safari */
+ 	}
+
+
+ 	.wrapper > *{
+ 		flex: 1 100%; 
+ 	}
+
+
+ 	::selection {
+
+
+ 		/*background-color: #ECC05A; */
+ 		background-color: #5AEC80; 
+ 	}
+
+ 	/*----------page overall setting end-----------*/
+
+
+
+
+ 	/*----------header start-----------*/
+
+ 	.header{
+ 		position: sticky;
+ 		position: -webkit-sticky; /* For Safari */
+ 		top: 0;
+ 		left: 0;
+ 		display: flex;
+ 		flex-flow: column wrap; 
+ 		width: 96%;
+
+ 		height: 15vh; 
+ 		margin: 0;
+ 		padding: 0px 2%;
+ 		z-index: 20; 
+ 		background-color: white; 
+ 		border-bottom: solid 1px black;
+ 	}
+
+ 	.header > *{
+ 		flex: 1 100%; 
+ 	}
+
+ 	.header-title{
+
+
+ 		width: 30%; 
+ 		float: left;
+ 		font-weight: 500; 
+ 		color: black; 
+ 		text-decoration: none;
+ 		font-size: 40px; 
+ 		-webkit-transition: color 0.2s; /*For Safari*/
+ 		transition: color 0.2s;
+ 	}
+
+ 	.header-title:active, .header-title:hover, .header-title:focus {
+ 		color:#C4C4C4; 
+ 	}
+
+
+ 	.header-nav-container {
+ 		width: 70%; 
+ 	}
+
+ 	.header-nav-ul{
+ 		list-style-type: none;
+ 		padding-top: 43px;
+ 	}
+
+ 	.nav-item {
+ 		float: right;
+ 		padding-left: 7%; 
+ 	}
+
+ 	.nav-a{
+ 		font-weight: 500; 
+ 		font-size: 20px; 
+ 		text-transform: uppercase;
+ 		text-decoration: none;
+ 		color: #C4C4C4;
+ 		-webkit-transition: color 0.2s; /*For Safari 3.1 to 6.0*/
+ 		transition: color 0.2s;
+ 	}
+
+ 	.nav-a:active, .nav-a:hover, .nav-a:focus {
+ 		color:black; 
+ 		text-decoration: underline;
+ 	}
+
+ 	/*----------header end-----------*/
+
+
+ 	/*----------body start-----------*/
+ 	.body{
+ 		position: relative;
+ 		z-index: 10; 
+ 		width: 100%;
+ 		height: 85vh;
+ 		top: 0; 
+ 		left: 0; 
+ 		margin:0;
+ 		display: flex;
+ 		flex-flow: column wrap;
+ 	}
+
+ 	.body > *{
+ 		flex: 1 100%; 
+
+ 	}
+
+ 	/*----------display start-----------*/
+
+ 	.display{
+ 		background-color: white; 
+
+ 		width: 74%;
+ 		height: 85vh;
+ 		border-right: solid 1px black;
+ 		display: flex;
+ 		flex-flow: row wrap;  
+ 	}
+
+ 	.display > *{
+ 		flex: 1 100%; 
+ 	}
+
+ 	.display-middle{
+ 		height: 79vh;
+ 		/*font-family: "GT-Super-Display-Super"; */
+ 		display: flex;
+ 		flex-flow: column wrap; 
+ 		background-color: white; 
+ 	}
+
+ 	.display-middle > *{
+ 		flex: 1 100%; 
+ 	}
+
+ 	.display-middle-left{
+ 		display: flex;
+ 		width: 38%; 
+ 		background-color: white; 
+ 		/*border-right: solid 1px black;*/
+ 	}
+
+ 	.grey-img{
+ 		position: relative;
+ 		width: 84%; 
+ 		margin:auto auto;
+ 		z-index: 10; 
+ 	}
+
+
+ 	.display-middle-right{
+ 		display: flex;
+ 		flex-flow: row wrap;
+ 		width: 61.9%; 
+ 		background-color: white; 
+ 		border-left: solid 1px black;
+ 		border-right: solid 1px black;
+ 		z-index: 15; 
+ 		overflow-y: scroll;
+ 		overflow-x: hidden;
+ 	}
+
+ 	.display-middle-right > *{
+ 		flex: 1 100%; 
+ 	}
+
+
+
+
+
+ 	.display-content{
+ 		display: flex;
+ 		flex-flow: row wrap; 
+ 		height: 110vh; 
+ 		border-bottom: 1px solid black; 
+ 		background-color: white; 
+ 		/*background-color: green; */
+
+ 	}
+
+ 	.display-content > *{
+ 		flex: 1 100%; 
+ 	}
+
+ 	.display-right-title{
+ 		position: relative;
+ 		height: 14vh; 
+ 		font-size: 40px;  
+ 		/*margin:auto 20%;*/
+ 		margin:auto;
+ 		margin-left: 20%; 
+ 		margin-right: 0; 
+ 		padding-top: 7vh; 
+
+
+ 		
+
+ 	}
+
+ 	.display-right-description{
+ 		position: relative;
+ 		height: 11vh; 
+ 		font-size: 20px;
+
+ 		margin:auto 20%;
+
+ 		padding-top: 1vh;
+ 
+ 		
+ 	}
+
+ 	.display-right-detail{
+ 		position: relative;
+ 		height: 5vh; 
+ 		font-size: 20px; 
+ 		margin:auto 20%;
+ 		padding-top: 1vh;
+ 		padding-bottom: 1vh;
+
+
+ 	}
+ 	.display-right-color{
+ 		position: relative;
+ 		height: 80px; 
+ 		margin:auto 20%;
+ 		padding-bottom: 3vh;
+
+
+
+ 	}
+
+
+ 	.display-right-size{
+ 		position: relative;
+ 		height: 8vh;
+ 		display: flex;
+ 		flex-flow: column wrap; 
+ 		padding-top: 2vh; 
+ 		font-size: 20px;
+ 		margin:auto 20%;
+ 		width: 61.9%; 
+
+
+ 	}
+
+ 	.display-right-size > *{
+ 		flex: 1 100%; 
+ 	}
+
+ 	.display-right-size-text{
+ 		width: 70px; 
+
+ 		padding-top: 2.5vh; 
+
+
+ 	}
+ 	.display-right-size-list{
+ 		width: 300px;  
+ 	}
+
+ 	.display-list-ul{
+ 		list-style-type: none;
+ 	}
+
+ 	.display-list-li{
+ 		float: left;
+ 		padding-right: 30px; 
+
+ 		font-weight: 300; 
+ 		text-decoration:none;
+ 		-webkit-transition: font-weight 0.2s; /*For Safari 3.1 to 6.0*/
+ 		transition: font-weight 0.2s; 
+
+ 	}
+
+
+ 	.display-list-li:active, .display-list-li:hover, .display-list-li:focus {
+
+ 		font-weight: 500;
+ 		text-decoration:underline;  
+ 	}
+
+ 	.display-right-price{
+ 		position: relative;
+ 		height: 5vh; 
+ 		padding-top: 5vh;
+ 		margin:auto 20%;
+ 		font-size: 30px; 
+ 		padding-bottom: 6vh;
+
+ 	}
+
+ 	.purchase-button{
+ 		position: relative;
+ 		margin:auto 20%;
+ 		height: 7vh; 
+ 		/*background-color: lightgreen; */
+ 		padding-bottom: 6vh;
+ 	}
+
+	.purchase-button a{
+ 		text-decoration: none;
+ 		color: black;
+ 	}
+
+
+
+
+
+ 	.display-review{
+ 		display: flex;
+ 		flex-flow: row wrap; 
+ 		height: 65vh; 
+ 		background-color: white; 
+ 		z-index: 15; 
+
+ 	}
+
+
+ 	.display-review > *{
+ 		flex: 1 100%;
+ 	}
+
+
+
+ 	.body-right-bottom-title{
+ 		height: 11vh; 
+ 		font-size: 40px; 
+
+ 		padding-top: 6vh; 
+
+
+ 		margin:auto 20%;
+
+
+ 	}
+ 	.body-right-bottom-box{
+ 		height: 24vh; 
+ 		display: flex;
+ 		padding-top: 4vh; 
+ 		margin:auto 20%;
+ 	}
+
+ 	.box{
+ 		position: relative;
+ 		width: 80%; 
+ 		height: 20vh; 
+ 		font-size: 20px; 
+ 		font-weight: 300; 
+ 	}
+ 	.body-right-bottom-button{
+ 		height: 15vh; 
+ 		margin:auto 20%; 
+ 		padding-top: 5vh; 
+
+ 	}
+
+ 	.button{
+ 		width: 170px; 
+ 		font-size: 20px; 
+ 		padding: 2vh 5px; 
+ 		text-align: center;
+ 		border: 1px solid black; 
+ 		background-color: white; 
+
+ 		-webkit-transition: background-color 0.2s; /*For Safari 3.1 to 6.0*/
+ 		transition: background-color 0.2s;
+ 	}
+
+ 	.button:active, .button:hover, .button:focus {
+ 		background-color: #C4C4C4; 
+ 	}
+
+ 	/*----------footer start-----------*/
+
+ 	.footer {
+ 		position: relative;
+ 		z-index: 20; 
+ 		background-color: white; 
+ 		height: 2vh; 
+ 		width: 100%; 
+ 		border-top: 1px solid black;
+
+ 		display : flex;
+ 		flex-flow : column wrap;
+ 		padding: 2vh 0; 
+
+ 	}
+
+ 	.footer > * {
+ 		flex : 1 100%;
+ 	}
+
+ 	.footer-a{
+ 		color: #C4C4C4;
+ 		font-weight: 300; 
+ 		text-decoration:none;
+ 		-webkit-transition: font-weight 0.2s, color 0.2s; /*For Safari 3.1 to 6.0*/
+ 		transition: font-weight 0.2s, color 0.2s; 
+ 	}
+
+ 	.footer-a:active, .footer-a:hover, .footer-a:focus {
+ 		color: black; 
+ 		font-weight: 500;  
+ 	}
+
+ 	.style-guide {
+ 		padding-right: 8%; 
+ 		width : 30%;
+ 		text-align: right;
+
+ 	}
+
+ 	.citation {
+ 		padding: 0px 2%; 
+ 		width : 20%;
+ 		text-align : center;
+ 		border-left : 1px solid #C4C4C4;
+ 		border-right : 1px solid #C4C4C4;
+ 	}
+
+
+ 	.git-repo {
+ 		width : 30%;
+ 		padding-left: 8%; 
+ 		text-align: left;
+ 	}
+
+ 	/*----------footer end-----------*/
+
+
+
+
+
+ 	/*----------display end-----------*/
+
+
+
+
+
+
+
+ 	/*----------drawer start-----------*/
+
+
+ 	.collection{
+ 		background-color: white; 
+ 		width: 26%;
+ 		overflow-y: scroll;
+ 	}
+
+ 	.collection a{
+ 		text-decoration: none;
+ 		color: black; 
+ 	}
+
+ 	.drawer{
+ 		word-spacing: 3px; 
+ 		background-color: white; 
+ 		font-size: 20px; 
+ 		font-weight: 300; 
+ 		text-align: left;
+ 		padding-top: 24px; 
+ 		padding-left: 20%; 
+ 		padding-bottom: 22px; 
+ 		border-bottom: solid 1px #C4C4C4;
+ 		-webkit-transition: background-color 0.2s, font-weight 0.2s; /*For Safari */
+ 		transition: background-color 0.2s, font-weight 0.2s;
+ 	}
+
+ 	.drawer:active, .drawer:hover, .drawer:focus {
+ 		background-color:#C4C4C4; 
+ 		font-weight: 500; 
+ 	}
+
+ 	#grey{
+ 		background-color: #C4C4C4;
+ 		font-weight: 500;  
+ 	}
+
+ 	/*----------drawer end-----------*/
+
+
+ 	/*----------body end-----------*/
+
+ 	
+
+
+
+ 		/*----------mobile responsive start-----------*/	
+
+ 		@media only screen and (max-width: 720px), only screen and (max-height: 540px){
+
+
+
+ 			/*----------mobile header start-----------*/
+
+ 			.header{
+ 				position: fixed;
+ 				height: 80px; 
+ 				position: -webkit-fixed; 
+ 				flex-flow: row wrap; 
+ 			}
+
+
+ 			.header-title{
+ 				position: fixed;
+ 				top: 10px; 
+ 				left: 40px; 
+ 				height:30px;
+ 				width: 100%; 
+ 				float: left;
+ 				font-size: 30px; 
+ 			}
+
+ 			.header-nav-container {
+ 				position: fixed;
+ 				width: 100%; 
+ 				top: 40px; 
+ 				left: 0px; 
+ 				height:40px;
+ 				padding: 0; 
+ 				margin:0;	
+ 			}
+
+ 			.header-nav-ul{
+ 				padding-top: 0px;
+ 			}
+
+ 			.nav-item {
+ 				float: left;
+ 				padding: 0; 
+ 				margin:0;
+ 				padding-right: 6%; 
+
+ 			}
+
+ 			.nav-a{
+ 				font-weight: 500; 
+ 				font-size: 14px; 
+ 				}
+
+
+ 				/*----------mobile header end-----------*/
+
+
+ 				/*----------mobile body and footer start-----------*/
+
+ 		.body{
+ 			height: 100vh; 
+ 			overflow-y: scroll;
+ 		}
+
+ 		.collection{
+ 			display: none;
+ 		}
+
+ 		.display{
+ 			position: relative;
+ 			top: 80px; 
+ 			width: 100%; 
+ 			border-right: none;
+
+ 		}
+
+ 		.footer{
+ 			position: relative;
+ 			top: 83vh; 
+ 			font-size: 12px; 
+ 		}
+
+
+ 		.display-middle{
+ 			flex-flow: row wrap; 
+ 			border-right: none; 
+ 		}
+
+ 		.display-middle-left{
+ 			height: 50vh; 
+ 			/*background-color: grey; */
+ 		}
+
+ 		.grey-img{
+ 			width: 37%;
+
+ 		}
+
+ 		.display-middle-right{
+ 			
+ 			height: 120vh; 
+            /*background-color: lightgreen; */
+ 			border-left: none;
+ 			border-right: none;
+ 			overflow-y: hidden;
+ 		}
+
+ 		.display-content{
+ 			height: 60vh; 
+ 			/*background-color: lightgreen;*/ 
+
+ 		}
+
+ 		.display-review{
+ 			height: 60vh;
+ 			/*background-color: lightgreen; */
+ 		}
+
+
+ 		.display-right-title{
+        font-size: 30px; 
+ 		padding-top: 0vh; 
+ 		padding-bottom: 0vh; 
+ 		height: 6vh; 
+ 		margin:20px 20%; 
+ 	    }
+
+
+ 	    .display-right-description{
+ 		margin:10px 20%; 
+ 		height: 5vh; 
+ 		font-size: 16px;
+ 		padding-top: 0vh;
+ 
+
+ 	}
+
+ 	.display-right-detail{
+ 		height: 3vh; 
+ 		font-size: 16px; 
+
+ 		padding-top: 0vh;
+ 		padding-bottom: 0vh;
+ 		margin:10px 20%; 
+
+
+
+
+ 	}
+ 	.display-right-color{
+
+ 		height: 80px; 
+ 		padding-top: 0vh;
+
+ 		padding-bottom: 0vh;
+ 		margin:10px 20%; 
+
+
+
+ 	}
+
+
+ 	.display-right-size{
+
+ 		height: 6vh;
+
+ 		padding-top: 0vh; 
+ 		font-size: 16px;
+ 		margin:10px 20%; 
+
+
+
+
+ 	}
+
+
+
+ 	.display-right-size-text{
+ 		width: 70px; 
+ 		margin-top: 10px; 
+ 		margin-bottom: 10px; 
+
+ 		padding-top: 2vh; 
+
+
+
+ 	}
+ 	.display-right-size-list{
+ 		width: 300px;  
+ 		margin-top: 10px; 
+ 		margin-bottom: 10px;
+ 	}
+
+
+
+ 	.display-list-li{
+
+ 		padding-right: 6%;  
+
+ 	}
+
+
+
+ 	.display-right-price{
+
+ 		height: 5vh; 
+ 		padding-top: 2vh;
+        
+ 		font-size: 20px; 
+ 		padding-bottom: 0vh;
+
+ 	}
+
+/* 	.button{
+ 		height: 5vh; 
+ 		padding-top: 2vh;
+ 		font-size: 20px; 
+ 		padding-bottom: 4vh;
+ 	}*/
+
+
+
+
+
+
+ 	.body-right-bottom-title{
+ 		height: 6vh; 
+ 		font-size: 30px; 
+        margin:20px 20%;
+ 		padding-top: 4vh; 
+ 		 
+
+ 	}
+ 	.body-right-bottom-box{
+ 		height: 16vh; 
+ 		margin:10px 20%;
+         
+ 		padding-top: 0vh; 
+ 		
+ 	}
+
+ 	.box{
+ 		 
+ 		width: 80%; 
+ 		height: 15vh; 
+ 		font-size: 16px; 
+ 		 
+ 	}
+
+
+
+
+ 	.body-right-bottom-button{
+ 		height: 7vh; 
+        margin:10px 20%;
+ 		
+ 		padding-top: 0vh; 
+ 		padding-bottom: 4vh; 
+
+ 	}
+
+ 	.button{
+ 		width: 170px; 
+ 		font-size: 16px; 
+ 		padding: 2vh 5px; 
+ 		
+
+ 	}
+
+
+
+
+
+
+
+ 		
+ 			/*----------mobile body and footer end-----------*/
+
+ 		}
+
+ 		/*----------mobile responsive end-----------*/
