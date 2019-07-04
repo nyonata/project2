@@ -1,0 +1,350 @@
+/*
+
+    Made by:
+    	
+ 	 \(▔＾▔)/        \(^——^)/
+
+ 	Amiko Tong  &  Nadia Yonata
+ 		
+
+
+
+ 	For IAT 339 course group project. 
+ 	Used ... resource or code from ...*/
+
+
+
+ 	/*----------page overall setting start-----------*/
+ 	.wrapper{
+ 		position: relative;
+ 		height: 100vh;
+ 		margin: 0;
+ 		padding: 0;
+
+ 		display: flex;
+ 		flex-flow: row wrap; 
+ 		font-family:  Helvetica, sans-serif;
+ 		letter-spacing: 0.05em;
+ 		font-weight: 300; 
+ 		background-color: white;  
+ 		color:black; 
+ 	}
+
+
+ 	.wrapper > *{
+ 		flex: 1 100%; 
+ 	}
+
+
+ 	::selection {
+
+
+ 		
+ 	/*	background-color: #5AEC80; 
+ 	background-color: #C989FD; */
+ 	background-color: #FFD600; 
+
+ 	/*background-color: #C4C4C4;*/ 
+ }
+
+ /*----------page overall setting end-----------*/
+
+
+
+
+ /*----------header start-----------*/
+
+ .header{
+ 	position: sticky;
+ 	position: -webkit-sticky; /* For Safari */
+ 	top: 0;
+ 	left: 0;
+ 	display: flex;
+ 	flex-flow: column wrap; 
+ 	width: 96%;
+
+ 	height: 15vh; 
+ 	margin: 0;
+ 	padding: 0px 2%;
+ 	z-index: 20; 
+ 	background-color: white; 
+ 	border-bottom: solid 1px black;
+ }
+
+ .header > *{
+ 	flex: 1 100%; 
+ }
+
+ .header-title{
+ 	width: 30%; 
+ 	float: left;
+ 	font-weight: 500; 
+ 	color: black; 
+ 	text-decoration: none;
+ 	font-size: 40px; 
+ 	-webkit-transition: color 0.2s; /*For Safari*/
+ 	transition: color 0.2s;
+ }
+
+ .header-title:active, .header-title:hover, .header-title:focus {
+ 	color:#C4C4C4; 
+ }
+
+
+ .header-nav-container {
+ 	width: 70%; 
+ }
+
+ .header-nav-ul{
+ 	list-style-type: none;
+ 	padding-top: 43px;
+ }
+
+ .nav-item {
+ 	float: right;
+ 	padding-left: 7%; 
+ }
+
+ .nav-a{
+ 	font-weight: 500; 
+ 	font-size: 20px; 
+ 	text-transform: uppercase;
+ 	text-decoration: none;
+ 	color: #C4C4C4;
+ 	-webkit-transition: color 0.2s; /*For Safari 3.1 to 6.0*/
+ 	transition: color 0.2s;
+ }
+
+ .nav-a:active, .nav-a:hover, .nav-a:focus {
+ 	color:black; 
+ 	text-decoration: underline;
+ }
+
+ /*----------header end-----------*/
+
+
+
+
+ /*----------body start-----------*/
+
+
+ .body{
+ 	position: relative;
+ 	z-index: 1; 
+ 	width: 100%;
+ 	height: 145vh;
+ 	top: 0; 
+ 	left: 0; 
+ 	margin:0;
+ 	display: flex;
+ 	flex-flow: row wrap;
+ 	background-color: white; 
+ 	/*padding: 0px 2%;*/
+
+ }
+
+ .body > *{
+ 	flex: 1 100%; 
+
+ }
+
+ .row-1{
+ 	display: flex;
+ 	height: 5vh; 
+ 	font-size: 20px; 
+ 	background-color: white; 
+
+ 	text-align: center;
+ 	padding: 0 2%;
+
+
+ }
+ .row-2{
+ 	display: flex;
+ 	height: 60vh; 
+ 	 
+ }
+ .row-3{
+ 	display: flex;
+ 	height: 30vh; 
+ 	font-size: 40px; 
+ 	padding: 0 25%;
+ 	
+ }
+ .row-4{
+ 	display: flex;
+ 	height: 30vh; 
+ 	font-size: 20px; 
+ 	padding: 0 25%;
+ 	
+ }
+ .row-5{
+ 	display: flex;
+ 	height: 20vh; 
+ 	
+ 	padding: 0 20%;
+ }
+
+
+ .body-text{
+ 	position: relative;
+ 	margin:auto auto;
+ }
+
+ .body-image{
+ 	position: relative;
+ 	margin:auto auto;
+ 	width: 43%; 
+ }
+
+  .button{
+ 	position: relative;
+ 	margin:auto auto;
+ 	width: 170px; 
+ 	font-size: 20px; 
+ 	padding: 2vh 5px; 
+ 	text-align: center;
+ 	border: 1px solid black; 
+ 	background-color: white; 
+
+ 	-webkit-transition: background-color 0.2s; /*For Safari 3.1 to 6.0*/
+ 	transition: background-color 0.2s;
+ }
+
+ .button:active, .button:hover, .button:focus {
+ 	background-color: #C4C4C4; 
+ }
+
+ .back-to-shop-button a{
+ 	text-decoration: none;
+ 	color: black;
+ }
+
+ /*----------body end-----------*/
+
+
+/*----------footer start-----------*/
+
+ .footer {
+ 	position: relative;
+ 	z-index: 20; 
+ 	background-color: white; 
+ 	height: 2vh; 
+ 	width: 100%; 
+ 	border-top: 1px solid black;
+
+ 	display : flex;
+ 	flex-flow : column wrap;
+ 	padding: 2vh 0; 
+
+ }
+
+ .footer > * {
+ 	flex : 1 100%;
+ }
+
+ .footer-a{
+ 	color: #C4C4C4;
+ 	font-weight: 300; 
+ 	text-decoration:none;
+ 	-webkit-transition: font-weight 0.2s, color 0.2s; /*For Safari 3.1 to 6.0*/
+ 	transition: font-weight 0.2s, color 0.2s; 
+ }
+
+ .footer-a:active, .footer-a:hover, .footer-a:focus {
+ 	color: black; 
+ 	font-weight: 500;  
+ }
+
+ .style-guide {
+ 	padding-right: 8%; 
+ 	width : 30%;
+ 	text-align: right;
+
+ }
+
+ .citation {
+ 	padding: 0px 2%; 
+ 	width : 20%;
+ 	text-align : center;
+ 	border-left : 1px solid #C4C4C4;
+ 	border-right : 1px solid #C4C4C4;
+ }
+
+
+ .git-repo {
+ 	width : 30%;
+ 	padding-left: 8%; 
+ 	text-align: left;
+ }
+
+ /*----------footer end-----------*/
+
+
+
+
+
+
+
+
+
+
+ @media only screen and (max-width: 720px), only screen and (max-height: 540px){
+ 	/*----------mobile header start-----------*/
+
+ 	.header{
+ 		height: 80px; 
+ 		position: fixed;
+ 		position: -webkit-fixed; /* For Safari */
+ 		flex-flow: row wrap; 
+ 	}
+
+
+ 	.header-title{
+ 		position: fixed;
+ 		top: 10px; 
+ 		left: 40px; 
+ 		height:30px;
+ 		width: 100%; 
+ 		float: left;
+ 		font-size: 30px; 
+ 	}
+
+ 	.header-nav-container {
+ 		position: fixed;
+ 		width: 100%; 
+ 		top: 40px; 
+ 		left: 0px; 
+ 		height:40px;
+ 		padding: 0; 
+ 		margin:0;	
+ 	}
+
+ 	.header-nav-ul{
+ 		padding-top: 0px;
+ 	}
+
+ 	.nav-item {
+ 		float: left;
+ 		padding: 0; 
+ 		margin:0;
+ 		padding-right: 6%; 
+
+ 	}
+
+ 	.nav-a{
+ 		font-weight: 500; 
+ 		font-size: 14px; 
+ 	}
+
+
+ 	/*----------mobile header end-----------*/
+
+ 	 	.footer{
+ 		position: relative;
+ 		top: 0vh; 
+ 		font-size: 12px; 
+ 	}
+
+
+ }
