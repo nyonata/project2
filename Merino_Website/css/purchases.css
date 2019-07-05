@@ -1,16 +1,11 @@
 /*
-
     Made by:
     	
  	 \(▔＾▔)/        \(^——^)/
 
  	Amiko Tong  &  Nadia Yonata
- 		
-
-
-
  	For IAT 339 course group project. 
- 	Used ... resource or code from ...*/
+ */
 
 
 
@@ -462,6 +457,10 @@
  	background-color: #C4C4C4; 
  }
  
+ .button a{
+ 	text-decoration: none;
+ 	color: black;
+ }
 
 
 
